@@ -25,7 +25,9 @@ SECRET_KEY = 'j^!*3d2!uyd#8dbg3@^y+!trwl8dne!^&*cv5eec!od^5_))i+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.lipocmma.cn'
+]
 
 
 # Application definition
