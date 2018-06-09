@@ -17,5 +17,5 @@ from django.conf.urls import url
 from WechatAPI import views
 
 urlpatterns = [
-        url(r'^wxapi/access_server/', views.AccessServer, name='WechatAccess')
+        url(r'^access_server/', views.AccessServer, name='WechatAccess')
 ]
