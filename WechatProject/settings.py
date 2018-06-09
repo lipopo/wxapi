@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+# set up celery
+import djcelery
+djcelery.setup_loader()
+
+from celery.schedules import crontab
+from datetime import timedelta
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -43,7 +49,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'django_filters',
-    'WechatAPI'
+    'WechatAPI',
+    'djcelery',
+    'django_celery_results'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +133,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Celery Setting
+CELERY_BROKER_URL = 'amqp://wx_lipo:lipolipo@localhost:6380/wxapi'
+CELERY_RESULT_BACKEND = 'django_db'
+
+CELERYBEAT_SCHEDULE = {
+    'refreshAccessToken': {
+        'task': 'WechatAPI.tasks.refreshAccessToken',
+        'schedule': timedelta(seconds=4000),
+        # 'schedule': crontab(seconds='7000'),
+        # 'args': (16, 16)
+    },
+}
