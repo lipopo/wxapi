@@ -17,7 +17,6 @@ import djcelery
 djcelery.setup_loader()
 
 from celery.schedules import crontab
-from datetime import timedelta
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -138,11 +137,3 @@ STATIC_URL = '/static/'
 CELERY_BROKER_URL = 'amqp://wx_lipo:lipolipo@localhost:6380/wxapi'
 CELERY_RESULT_BACKEND = 'django_db'
 
-CELERYBEAT_SCHEDULE = {
-    'refreshAccessToken': {
-        'task': 'WechatAPI.tasks.refreshAccessToken',
-        'schedule': timedelta(seconds=4000),
-        # 'schedule': crontab(seconds='7000'),
-        # 'args': (16, 16)
-    },
-}
