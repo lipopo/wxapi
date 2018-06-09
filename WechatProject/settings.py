@@ -26,7 +26,8 @@ SECRET_KEY = 'j^!*3d2!uyd#8dbg3@^y+!trwl8dne!^&*cv5eec!od^5_))i+'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'www.lipocmma.cn'
+    'www.lipocmma.cn',
+    '127.0.0.1'
 ]
 
 

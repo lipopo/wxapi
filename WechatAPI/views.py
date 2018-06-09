@@ -12,10 +12,9 @@ def AccessServer(request):
         nonce = request.GET.get('nonce')
         signature = request.GET.get('signature')
         token = 'tttLZPppap'
-        access = [timestamp, nonce, token]
-        linkStr = reduce(lambda x, y: x + y, access.sort(), '')
-        hashCode = hashlib.sha1(linkStr)
-        print hashCode
-        print signature
+        access = [nonce, token, timestamp]
+        access.sort()
+        linkStr = reduce(lambda x, y: x + y, access, '')
+        hashCode = hashlib.sha1(linkStr).hexdigest()
         if hashCode == signature:
             return HttpResponse(echoStr)
