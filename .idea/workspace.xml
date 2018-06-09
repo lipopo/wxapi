@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2481b860-33da-4aed-aa5d-986518eee1b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WechatProject/celery.py" afterPath="$PROJECT_DIR$/WechatProject/celery.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WechatProject/settings.py" afterPath="$PROJECT_DIR$/WechatProject/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WechatProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="-2057">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#318#327#0" expanded="true" />
               </folding>
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="celery.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WechatProject/celery.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -111,8 +110,8 @@
         <option value="$PROJECT_DIR$/WechatProject/__init__.py" />
         <option value="$PROJECT_DIR$/WechatAPI/models.py" />
         <option value="$PROJECT_DIR$/WechatAPI/tasks.py" />
-        <option value="$PROJECT_DIR$/WechatProject/settings.py" />
         <option value="$PROJECT_DIR$/WechatProject/celery.py" />
+        <option value="$PROJECT_DIR$/WechatProject/settings.py" />
       </list>
     </option>
   </component>
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528511552598</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修复版本BUG">
+      <created>1528512353553</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528512353553</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers>
       <GitHub shared="false" url="https://github.com">
         <option name="assignedIssuesOnly" value="false" />
@@ -322,7 +328,8 @@
     <MESSAGE value="change urls" />
     <MESSAGE value="调试view验证函数" />
     <MESSAGE value="添加定时刷新token" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加定时刷新token" />
+    <MESSAGE value="修复版本BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复版本BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -449,22 +456,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WechatProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#318#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WechatProject/celery.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WechatProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2057">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#318#327#0" expanded="true" />
           </folding>
         </state>
       </provider>
