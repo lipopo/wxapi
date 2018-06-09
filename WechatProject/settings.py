@@ -134,5 +134,5 @@ STATIC_URL = '/static/'
 
 # Celery Setting
 CELERY_BROKER_URL = 'amqp://wx_lipo:lipolipo@localhost:6380/wxapi'
-CELERY_RESULT_BACKEND = 'django_db'
+CELERY_RESULT_BACKEND = 'django-db'
 
